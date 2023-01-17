@@ -1,0 +1,12 @@
+
+
+.custom {
+    font-family: 'Anton', sans-serif;
+}
+.custom:hover {
+    color: #FFF;
+    text-decoration:none;
+}
+.custom span:hover {
+    color: #7bacab;
+}
