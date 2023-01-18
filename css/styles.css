@@ -1,5 +1,8 @@
-
-
+h1 {
+    font-family: 'montserrat', sans-serif;
+    letter-spacing: 0.15em;
+    font-size: 54px;
+}
 .custom {
     font-family: 'Anton', sans-serif;
 }
@@ -9,4 +12,9 @@
 }
 .custom span:hover {
     color: #7bacab;
+}
+.firstP {
+    letter-spacing: normal;
+    font-size: 18px;
+    font-family: 'montserrat', sans-serif;
 }
