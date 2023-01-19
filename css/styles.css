@@ -18,3 +18,16 @@ h1 {
     font-size: 18px;
     font-family: 'montserrat', sans-serif;
 }
+
+.row-content {
+    padding: 2px;
+  }
+
+.first-img-row {
+    min-height: 285px;
+}
+
+.img-thumbnail {
+    background-color: #7bacab;
+}
+
