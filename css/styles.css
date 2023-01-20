@@ -7,12 +7,13 @@ h1 {
     font-family: 'Anton', sans-serif;
 }
 .custom:hover {
-    color: #FFF;
     text-decoration:none;
 }
+
 .custom span:hover {
     color: #7bacab;
 }
+
 .firstP {
     letter-spacing: normal;
     font-size: 18px;
@@ -31,3 +32,16 @@ h1 {
     background-color: #7bacab;
 }
 
+.navbar-nav {
+    margin-left: 25rem;
+    margin-top: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar .navbar-nav .nav-item .nav-link {
+      padding: 0 0.5em;
+    }
+    .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+      border-right: 2px solid #000000;
+    }
+  }

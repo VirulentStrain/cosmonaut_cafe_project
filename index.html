@@ -20,7 +20,34 @@
 <body>
 
 <!--LOGO AND NAV BAR-->
-<header>
+<header> 
+  <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <a class="navbar-brand" href="#">
+      <img src="/img/updated_logo_crop.png"  width="43%" alt="logo picture -- cosmonaut cafe with a rocket for the letter C"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarTop" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navBarTop">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link text-dark custom" href="#"><span>Info.</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark custom" href="#"><span>Browse Inventory</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-dark custom btn " data-target="#loginModal" data-toggle="modal" href="#"><span>Crew Login</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+<!-- THE ORIGINAL HEADER/NAV BAR  
+  <header>
   <div class="container">
     <div class="row">
       <div class="col">
@@ -43,6 +70,39 @@
     </div>
   </div>
 </header>
+-->
+
+
+<!--LOGIN MODAL -->
+<div class="modal" tabindex="-1" role="dialog" id="loginModal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form> 
+          <div class="form-group">
+            <label for="userName">Username</label>
+            <input type="email" class="form-control" placeholder="Enter email" aria-describedby="emailHelp" id="userName" name="userName"/>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" placeholder="Password" id="password" name="password"/>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -64,6 +124,23 @@
 
   <!--Collection of IMGs showing possible cargo-->
   <div class="container mt-5">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md row-content">
+        <div class="column">
+          <img class=" first-img-row img-fluid img-thumbnail" src="/img/coffee_beans.jpg"/>
+        </div>
+      </div>
+      <div class="col-md row-content">
+        <div class="column">
+          <img class="first-img-row img-fluid img-thumbnail"  src="/img/launch_controls.jpg" />
+        </div>
+      </div>
+      <div class="col-md row-content">
+        <div class="column">
+          <img class=" first-img-row img-fluid img-thumbnail" src="/img/astronaut_visit_us.jpg" />
+        </div>
+      </div>
+    </div>
     <div class="row align-items-center justify-content-center">
       <div class="col-md row-content">
         <div class="column">
