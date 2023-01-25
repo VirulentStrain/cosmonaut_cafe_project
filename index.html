@@ -13,14 +13,15 @@
     <link rel="stylesheet" href="/css/styles.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Major+Mono+Display&family=Rubik+Distressed&display=swap" rel="stylesheet">
 
     <title>Cosmonaut Cafe</title>
 </head>
 <body>
 
 <!--LOGO AND NAV BAR-->
-<header> 
+<header class="header"> 
   <nav class="navbar navbar-expand-md navbar-light bg-white">
     <a class="navbar-brand" href="#">
       <img src="/img/updated_logo_crop.png"  width="43%" alt="logo picture -- cosmonaut cafe with a rocket for the letter C"/>
@@ -35,42 +36,16 @@
           <a class="nav-link text-dark custom" href="#"><span>Info.</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark custom" href="#"><span>Browse Inventory</span></a>
+          <a class="nav-link text-dark custom" href="#"><span>Inventory</span></a>
         </li>
+        <!--LOGIN MODAL BUTTON-->
         <li class="nav-item">
-            <a class="nav-link text-dark custom btn " data-target="#loginModal" data-toggle="modal" href="#"><span>Crew Login</span></a>
+            <a class="nav-link text-dark custom btn " data-target="#loginModal" data-toggle="modal" href="#"><span>Crew Auth</span></a>
         </li>
       </ul>
     </div>
   </nav>
 </header>
-
-
-<!-- THE ORIGINAL HEADER/NAV BAR  
-  <header>
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <a href="#"><img src="/img/updated_logo_crop.png" class="img-fluid" width="300px" height="300px" alt="picture of a spaceship and the name of the cafe, cosmonaut cafe"/></a>
-      </div>
-      <div class="col">
-        <nav class="navbar bg-white navbar-expand-md navbar-light justify-content-end">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarToggle">
-            <a class="nav-link active text-dark custom" href="#"><span>Info.</span></a>
-            <a class="nav-link text-dark custom" href="#"><span>Inventory</span></a>
-            <a class="nav-link text-dark custom" href="#"><span>Launch Pad</span></a>
-            <a class="nav-link text-dark custom" href="#"><span>Recruitment</span></a>
-            <a class="nav-link text-dark custom" href="#"><span>Join</span></a>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </div>
-</header>
--->
 
 
 <!--LOGIN MODAL -->
@@ -116,74 +91,71 @@
     </div>
     <div class="row ">
       <div class="col">
-        <p class="firstP">Choose from an assortment of coffee & accessories</p>
+        <p class="firstP">Come by<span class="span1">,</span> we have plenty of space</p>
       </div>
     </div>
   </div>
 
 
   <!--Collection of IMGs showing possible cargo-->
-  <div class="container mt-5">
-    <div class="row align-items-center justify-content-center">
-      <div class="col-md row-content">
-        <div class="column">
-          <img class=" first-img-row img-fluid img-thumbnail" src="/img/coffee_beans.jpg"/>
+  <div class="container">
+    <div class="row">
+      <div class="col-md row-content" >
+        <div class="card text-center">
+          <img id="firstImage" class="card-img-top card-img first-img-row img-fluid" src="/img/coffee_beans.jpg"/>
+          <div class="card-body card-img-overlay fade-in-text">
+            <h2 class="card-title text-white" id="fadeInTextOne">Out of this world coffee</h2>
+          </div>
         </div>
       </div>
       <div class="col-md row-content">
-        <div class="column">
-          <img class="first-img-row img-fluid img-thumbnail"  src="/img/launch_controls.jpg" />
+        <div class="card text-center">
+          <img class="first-img-row img-fluid"  src="/img/launch_controls.jpg" />
+          <div class="card-body card-img-overlay fade-in-text">
+            <h2 class="card-title text-white">Launch Pad Control</h2>
+          </div>
         </div>
       </div>
       <div class="col-md row-content">
-        <div class="column">
-          <img class=" first-img-row img-fluid img-thumbnail" src="/img/astronaut_visit_us.jpg" />
+        <div class="card text-center">
+          <img class=" first-img-row img-fluid" src="/img/astronaut_visit_us.jpg" />
+          <div class="card-body card-img-overlay fade-in-text">
+            <h2 class="card-title text-white">Crew Member Portal Sign Up</h2>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row align-items-center justify-content-center">
-      <div class="col-md row-content">
-        <div class="column">
-          <img class=" first-img-row img-fluid img-thumbnail" src="/img/coffee_beans.jpg"/>
-        </div>
-      </div>
-      <div class="col-md row-content">
-        <div class="column">
-          <img class="first-img-row img-fluid img-thumbnail"  src="/img/launch_controls.jpg" />
-        </div>
-      </div>
-      <div class="col-md row-content">
-        <div class="column">
-          <img class=" first-img-row img-fluid img-thumbnail" src="/img/astronaut_visit_us.jpg" />
-        </div>
-      </div>
-    </div>
-    
+    </div> 
   </div>
 
-<!-- CODE FROM NUCAMP SITE -- MEDIA OBJECTS EXAMPLE
-
-  <div class="row row-content align-items-center">
-            <div class="col-sm-4 col-md-3 order-sm-last">
-                <h2 class="text-sm-right">Discover & Review</h2>
-            </div>
-            <div class="col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="/img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail" />
-                    <div class="media-body align-self-center">
-                        <h3>Our Campsites</h3>
-                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
-                    </div>
-                </div>
-            </div>
+  <footer class="footer"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-auto">
+          <a>
+            <span class="fa fa-instagram fa-2x" aria-hidden="true"></span>
+          </a>
         </div>
--->
+        <div class="col-sm-auto">
+          <a>
+            <span class="fa fa-twitter fa-2x" aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="col-sm-auto">
+          <a>
+            <span class="fa fa-facebook fa-2x" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-   <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/js/scripts.js"></script>
 </body>
 </html>
 

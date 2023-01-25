@@ -1,8 +1,13 @@
 h1 {
-    font-family: 'montserrat', sans-serif;
-    letter-spacing: 0.15em;
-    font-size: 54px;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.3em;
+    font-size: 83px;
 }
+.header {
+    border-bottom: 4px groove;
+    padding-bottom: 1em;
+}
+
 .custom {
     font-family: 'Anton', sans-serif;
 }
@@ -17,12 +22,12 @@ h1 {
 .firstP {
     letter-spacing: normal;
     font-size: 18px;
-    font-family: 'montserrat', sans-serif;
+    font-family: monospace;
 }
 
 .row-content {
     padding: 2px;
-  }
+}
 
 .first-img-row {
     min-height: 285px;
@@ -36,6 +41,34 @@ h1 {
     margin-left: 25rem;
     margin-top: 1rem;
 }
+
+.fade-in-text {
+    opacity: 0;
+    padding: 70px 0;
+    letter-spacing: 0.19rem;
+}
+
+.fade-in-text h2 {
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+
+.fade-in-text:hover {
+    opacity: 100%;
+    transition: opacity 1s;
+}
+
+.footer {
+    padding-top: 30px;
+}
+
+.span1 {
+    color: #7bacab;
+}
+
+
+
 
 @media only screen and (min-width: 992px) {
     .navbar .navbar-nav .nav-item .nav-link {
