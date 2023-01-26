@@ -4,13 +4,15 @@ h1 {
     font-size: 83px;
 }
 .header {
-    border-bottom: 4px groove;
+    border-bottom: 4px groove #3f474d;
     padding-bottom: 1em;
 }
 
 .custom {
     font-family: 'Anton', sans-serif;
 }
+
+
 .custom:hover {
     text-decoration:none;
 }
@@ -18,6 +20,11 @@ h1 {
 .custom span:hover {
     color: #7bacab;
 }
+
+.span2 {
+    font-family: 'Anton', sans-serif;
+}
+
 
 .firstP {
     letter-spacing: normal;
@@ -78,3 +85,21 @@ h1 {
       border-right: 2px solid #000000;
     }
   }
+
+/*CUSTOM CSS FOR ABOUT US*/ 
+
+.custom-aboutus {
+    padding-top: 0.05em;
+}
+
+.end-firstp {
+    padding-bottom: 1.15em;
+    border-bottom: 0.15em solid;
+}
+
+
+/*CUSTOM FOR INVENTORY*/ 
+.img-padding {
+    padding: 10px;
+    
+}
