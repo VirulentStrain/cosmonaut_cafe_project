@@ -4,7 +4,7 @@ h1 {
     font-size: 83px;
 }
 .header {
-    border-bottom: 4px groove #3f474d;
+    border-bottom: 4px groove;
     padding-bottom: 1em;
 }
 
