@@ -3,6 +3,10 @@ h1 {
     letter-spacing: 0.3em;
     font-size: 83px;
 }
+
+.h2 {
+    font-size: 45px;
+}
 .header {
     border-bottom: 4px groove;
     padding-bottom: 1em;
@@ -12,6 +16,11 @@ h1 {
     font-family: 'Anton', sans-serif;
 }
 
+.modal-custom {
+    font-family: 'Cookie', cursive;
+    font-size: 45px;
+}
+
 
 .custom:hover {
     text-decoration:none;
@@ -19,10 +28,6 @@ h1 {
 
 .custom span:hover {
     color: #7bacab;
-}
-
-.span2 {
-    font-family: 'Anton', sans-serif;
 }
 
 
@@ -40,9 +45,6 @@ h1 {
     min-height: 285px;
 }
 
-.img-thumbnail {
-    background-color: #7bacab;
-}
 
 .navbar-nav {
     margin-left: 25rem;
@@ -102,4 +104,8 @@ h1 {
 .img-padding {
     padding: 10px;
     
+}
+
+h3 {
+    font-family: 'Anton', sans-serif;
 }

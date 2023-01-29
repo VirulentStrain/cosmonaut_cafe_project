@@ -33,7 +33,7 @@
     <div class="collapse navbar-collapse" id="navBarTop">
       <ul class="navbar-nav">
         <li class="nav-item ">
-          <a class="nav-link text-dark custom" href="aboutus.html"><span>Info.</span></a>
+          <a class="nav-link text-dark custom" href="aboutus.html"><span>About</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark custom" href="#"><span>Inventory</span></a>
@@ -51,8 +51,8 @@
 <!--Breadcrumb for location/navigation-->
 <nav aria-label="breadcrumb ">
   <ol class="breadcrumb bg-white">
-    <li class="breadcrumb-item"><a href="index.html"><span class="text-dark span2">Home</span></a></li>
-    <li class="breadcrumb-item active" aria-current="page">Info.</li>
+    <li class="breadcrumb-item"><a href="index.html"><span class="text-dark custom">Home</span></a></li>
+    <li class="breadcrumb-item active" aria-current="page">Inventory</li>
   </ol>
 </nav>
 
@@ -91,12 +91,19 @@
 
 <!--CARDS COMPONENTS TO SHOW MENU/INVENTORY OF CAFE-->
 <div class="container">
-  <div class="row justify-content-center" >
+  <div class="row">
+    <div class="col-md-auto">
+      <a class="custom" data-toggle="collapse" href="#drinksCollapse" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <h2 class="dropdown-toggle text-dark h2">Drinks</h2>
+      </a>
+    </div>
+  </div>
+  <div class="row justify-content-center collapse" id="drinksCollapse" >
       <div class="col-md-auto img-padding">
           <div class="card" style="width: 18rem;">
               <img class="card-img-top d-none d-sm-block" src="/img/americano_cup.jpg" alt="">
               <div class="card-body">
-                <h5 class="card-title custom">Martiacano</h5>
+                <h5 class="card-title custom">Martian-cano</h5>
                 <p class="card-text">Water, espresso</p>
               </div>
           </div>
@@ -120,8 +127,70 @@
           </div>
       </div>
   </div>
-  
+  <div class="row">
+    <div class="col-md-auto">
+      <h3>Merch</h3>
+  </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-auto img-padding">
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top d-none d-sm-block" src="/img/coming_soon.jpg" alt="coming soon image">
+      </div>
+  </div>
+  </div>
 </div>
+
+<!--
+  <div class="container">
+  <div class="row">
+    <div class="col-md-auto text-center">
+      <h3>Drinks</h3>
+  </div>
+  </div>
+  <div class="row justify-content-center" >
+      <div class="col-md-auto img-padding">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top d-none d-sm-block" src="/img/americano_cup.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title custom">Martian-cano</h5>
+                <p class="card-text">Water, espresso</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-auto img-padding">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top d-none d-sm-block" src="/img/latte_cup.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title custom">Just a Latte</h5>
+                <p class="card-text">You know</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-auto img-padding">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top d-none d-sm-block" src="/img/red_latte.jpg" alt="">
+              <div class="card-body">
+                <h5 class="card-title custom">Red Latte</h5>
+                <p class="card-text">Find out</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-auto">
+      <h3>Merch</h3>
+  </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-auto img-padding">
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top d-none d-sm-block" src="/img/coming_soon.jpg" alt="coming soon image">
+      </div>
+  </div>
+  </div>
+</div>
+-->
 
 
 
