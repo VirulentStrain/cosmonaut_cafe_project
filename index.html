@@ -20,17 +20,15 @@
 <body>
 
 <!--LOGO AND NAV BAR-->
-<header class="header"> 
-  <nav class="navbar navbar-expand-md navbar-light bg-white">
-    <a class="navbar-brand" href="#">
-      <img src="/img/updated_logo_crop.png"  width="43%" alt="logo picture -- cosmonaut cafe with a rocket for the letter C"/>
-    </a>
+<div class="backgroundBannerIndex">
+<header> 
+  <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarTop" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navBarTop">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ">
         <li class="nav-item ">
           <a class="nav-link text-dark custom" href="aboutus.html"><span>About</span></a>
         </li>
@@ -47,12 +45,30 @@
 </header>
 
 
+
+  <!--H1 HEADING-->
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h1 class="header-h1">COSMONAUT CAFE</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="firstP">Come by<span class="span1">,</span> we have plenty of space</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 <!--LOGIN MODAL -->
 <div class="modal" tabindex="-1" role="dialog" id="loginModal">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title modal-custom"><span class="span1">L</span>ogin</h5>
+        <h5 class="modal-title modal-custom">Login</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -79,37 +95,20 @@
 
 
 
-
-
-  <!--H1 HEADING-->
-  <div class="container text-center mt-5">
-    <div class="row">
-      <div class="col">
-        <h1>COSMONAUT CAFE</h1>
-      </div>
-    </div>
-    <div class="row ">
-      <div class="col">
-        <p class="firstP">Come by<span class="span1">,</span> we have plenty of space</p>
-      </div>
-    </div>
-  </div>
-
-
   <!--Collection of IMGs showing possible cargo-->
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md row-content" id="image1">
+      <div class="col-md mt-3" id="image1">
         <a href="inventory.html">
           <div class="card text-center">
-            <img class="card-img-top card-img first-img-row img-fluid" src="/img/coffee_beans.jpg"/>
+            <img class="first-img-row img-fluid" src="/img/coffee_beans.jpg"/>
             <div class="card-body card-img-overlay fade-in-text">
-              <h2 class="card-title text-white" id="fadeInTextOne">Out of this world coffee</h2>
+              <h2 class="card-title text-white">Out of this world coffee</h2>
             </div>
           </div>
         </a>
       </div>
-      <div class="col-md row-content" id="image2">
+      <div class="col-md mt-3" id="image2">
         <a href="#" data-target="#operationModal" data-toggle="modal">
           <div class="card text-center">
             <img class="first-img-row img-fluid"  src="/img/launch_controls.jpg"/>
@@ -119,7 +118,11 @@
           </div>
         </a>
       </div>
-      <div class="col-md row-content" id="image3">
+      <div class="w-100 d-block d-sm-none"></div>
+      <div class="col-auto justify-content-center d-block d-sm-none text-center custom pop-up-text-index">
+        <a href="#" data-target="#operationModal" data-toggle="modal" class="a-color-change"><p>Click to Order</p></a>
+      </div>
+      <div class="col-md mt-3" id="image3">
         <div class="card text-center">
           <img class=" first-img-row img-fluid" src="/img/astronaut_visit_us.jpg"/>
           <div class="card-body card-img-overlay fade-in-text">
@@ -127,13 +130,18 @@
           </div>
         </div>
       </div>
+      <div class="w-100"></div>
+      <div class="col">
+        <a><p class="d-block d-sm-none text-center custom pop-up-text-index" >Cosmonaut Sign Up</p></a>
+      </div>
     </div>
-    <!--BUTTON TO REARAGE ORDER-->
+    <!--BUTTON TO REARAGE ORDER
     <div class="row text-center">
       <div class="col">
         <button id="rearrangeBtn" class="btn btn-dark custom" type="button">Rearrange!</button>
       </div>
     </div>
+  -->
   </div> 
 
 
@@ -183,7 +191,7 @@
 
 <!--Bottom of the page social media icons-->
   <footer class="footer"> 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-sm-auto">
           <a>

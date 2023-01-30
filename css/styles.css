@@ -1,15 +1,44 @@
-h1 {
+.header-h1 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 0.3em;
+    font-size: 83px;
+    color: whitesmoke;
+    margin-top: 10rem;
+}
+
+.firstP {
+    letter-spacing: normal;
+    font-size: 30px;
+    font-family: monospace;
+    color: whitesmoke;
+}
+
+.about-us-header-h1 {
     font-family: 'Anton', sans-serif;
     letter-spacing: 0.3em;
     font-size: 83px;
 }
 
-.h2 {
-    font-size: 45px;
+.backgroundBannerIndex {
+    background-image: url("/img/mars_banner_two_bg.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
 }
-.header {
-    border-bottom: 4px groove;
-    padding-bottom: 1em;
+
+.backgroundBannerInvtr {
+    background-image: url("/img/coffee_beans_inventory_2.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.header-border {
+    border-bottom: 2px solid gray;
 }
 
 .custom {
@@ -21,6 +50,18 @@ h1 {
     font-size: 45px;
 }
 
+.pop-up-text-index {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.a-color-change {
+    color: black;
+}
+.a-color-change:hover {
+    color: #7bacab;
+    text-decoration: none;
+}
 
 .custom:hover {
     text-decoration:none;
@@ -30,25 +71,9 @@ h1 {
     color: #7bacab;
 }
 
-
-.firstP {
-    letter-spacing: normal;
-    font-size: 18px;
-    font-family: monospace;
-}
-
-.row-content {
-    padding: 2px;
-}
-
 .first-img-row {
     min-height: 285px;
-}
-
-
-.navbar-nav {
-    margin-left: 25rem;
-    margin-top: 1rem;
+    max-height: 285px;
 }
 
 .fade-in-text {
@@ -60,7 +85,6 @@ h1 {
 .fade-in-text h2 {
     font-weight: bold;
     font-size: 50px;
-    
 }
 
 .fade-in-text:hover {
@@ -69,15 +93,8 @@ h1 {
 }
 
 .footer {
-    padding-top: 30px;
+    padding-top: 2rem;
 }
-
-.span1 {
-    color: #7bacab;
-}
-
-
-
 
 @media only screen and (min-width: 992px) {
     .navbar .navbar-nav .nav-item .nav-link {
@@ -94,18 +111,8 @@ h1 {
     padding-top: 0.05em;
 }
 
-.end-firstp {
-    padding-bottom: 1.15em;
-    border-bottom: 0.15em solid;
-}
-
-
 /*CUSTOM FOR INVENTORY*/ 
 .img-padding {
     padding: 10px;
-    
 }
 
-h3 {
-    font-family: 'Anton', sans-serif;
-}
